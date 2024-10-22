@@ -12,7 +12,7 @@ const balanceInLamports = await connection.getBalance(publicKey);
 
 console.log("Andreea's balance in lamports:", balanceInLamports);
 
-console.log("Airdropping 1 SOL to Andreea...");
+console.log("Airdropping 1 SOL to my address...");
 
 await airdropIfRequired(
     connection, 
@@ -25,4 +25,4 @@ console.log("Done airdropping!");
 
 const newBalanceInLamports = await connection.getBalance(publicKey);
 
-console.log("Andreea's new balance in lamports:", newBalanceInLamports);
+console.log("My new balance in lamports:", newBalanceInLamports);
